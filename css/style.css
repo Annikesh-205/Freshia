@@ -560,6 +560,34 @@ a:hover {
     border-color: #28a745; /* Changed from #0d6efd (blue) to green */
 }
 
+/* Product Section Styles */
+.container-xxl {
+    max-width: 1320px;
+}
+
+.section-header h1 {
+    font-weight: 700;
+    color: #212529;
+}
+
+.section-header p {
+    color: #6c757d;
+}
+
+/* Product Tabs */
+.nav-pills .nav-link {
+    border-radius: 0.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #28a745; /* Green */
+    border-color: #28a745; /* Green */
+}
+
 /* Product Items */
 .product-item {
     border: 1px solid #dee2e6;
@@ -587,7 +615,7 @@ a:hover {
 }
 
 .product-item .text-primary {
-    color: #28a745 !important; /* Changed from #0d6efd (blue) to green */
+    color: #28a745 !important; /* Green */
 }
 
 .product-item .text-decoration-line-through {
@@ -604,24 +632,24 @@ a:hover {
 
 /* Button Styles */
 .btn-primary {
-    background-color: #28a745; /* Changed from #0d6efd (blue) to green */
-    border-color: #28a745; /* Changed from #0d6efd (blue) to green */
+    background-color: #28a745; /* Green */
+    border-color: #28a745; /* Green */
 }
 
 .btn-primary:hover {
-    background-color: #218838; /* Darker green hover */
-    border-color: #1e7e34; /* Darker green hover */
+    background-color: #218838; /* Darker Green */
+    border-color: #1e7e34; /* Darker Green */
 }
 
 .btn-outline-primary {
-    color: #28a745; /* Changed from #0d6efd (blue) to green */
-    border-color: #28a745; /* Changed from #0d6efd (blue) to green */
+    color: #28a745; /* Green */
+    border-color: #28a745; /* Green */
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #28a745; /* Changed from #0d6efd (blue) to green */
-    border-color: #28a745; /* Changed from #0d6efd (blue) to green */
+    background-color: #28a745; /* Green */
+    border-color: #28a745; /* Green */
 }
 
 /* Animation Styles */

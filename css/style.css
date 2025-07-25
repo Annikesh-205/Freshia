@@ -556,8 +556,8 @@ a:hover {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #28a745; /* Changed from #0d6efd (blue) to green */
+    border-color: #28a745; /* Changed from #0d6efd (blue) to green */
 }
 
 /* Product Items */
@@ -587,7 +587,7 @@ a:hover {
 }
 
 .product-item .text-primary {
-    color: #0d6efd !important;
+    color: #28a745 !important; /* Changed from #0d6efd (blue) to green */
 }
 
 .product-item .text-decoration-line-through {
@@ -604,24 +604,24 @@ a:hover {
 
 /* Button Styles */
 .btn-primary {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #28a745; /* Changed from #0d6efd (blue) to green */
+    border-color: #28a745; /* Changed from #0d6efd (blue) to green */
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+    background-color: #218838; /* Darker green hover */
+    border-color: #1e7e34; /* Darker green hover */
 }
 
 .btn-outline-primary {
-    color: #0d6efd;
-    border-color: #0d6efd;
+    color: #28a745; /* Changed from #0d6efd (blue) to green */
+    border-color: #28a745; /* Changed from #0d6efd (blue) to green */
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #28a745; /* Changed from #0d6efd (blue) to green */
+    border-color: #28a745; /* Changed from #0d6efd (blue) to green */
 }
 
 /* Animation Styles */

@@ -123,3 +123,49 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Bootstrap components
+    var tabElms = document.querySelectorAll('a[data-bs-toggle="pill"]');
+    tabElms.forEach(function(tabEl) {
+        tabEl.addEventListener('shown.bs.tab', function (event) {
+            // Refresh animations when tab changes
+            new WOW().init();
+        });
+    });
+
+    // Initialize WOW.js for animations
+    new WOW({
+        offset: 100,
+        mobile: true
+    }).init();
+
+    // Product image hover effect
+    const productItems = document.querySelectorAll('.product-item');
+    productItems.forEach(item => {
+        const img = item.querySelector('img');
+        
+        item.addEventListener('mouseenter', () => {
+            img.style.transform = 'scale(1.05)';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            img.style.transform = 'scale(1)';
+        });
+    });
+
+    // Add to cart functionality
+    const addToCartButtons = document.querySelectorAll('.fa-shopping-bag').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const productName = this.closest('.product-item').querySelector('h5').textContent;
+            const productPrice = this.closest('.product-item').querySelector('.text-primary').textContent;
+            
+            // Here you would typically add to cart logic
+            console.log(`Added to cart: ${productName} - ${productPrice}`);
+            
+            // Show a simple notification
+            alert(`Added to cart: ${productName}`);
+        });
+    });
+});

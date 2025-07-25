@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #3CB815; /* Primary green */
-    --secondary: #FF0000; /* Changed to red */
-    --light: #FFEEEE; /* Changed to light red */
-    --dark: #111111;
+    --primary: Green; /* Primary green */
+    --secondary: Red; /* Changed to red */
+    --light: Black; /* Changed to light red */
+    --dark:White;
 }
 
 /* General Styles */

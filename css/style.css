@@ -12,6 +12,7 @@
     right: 30px;
     bottom: 30px;
     z-index: 99;
+    color:green;
 }
 
 .my-6 {
@@ -225,7 +226,7 @@
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--secondary);
+    background:green;
 }
 
 .section-header.text-start::before,
@@ -262,7 +263,7 @@
 
 /*** Product ***/
 .nav-pills .nav-item .btn {
-    color: var(--dark);
+    color: green;
 }
 
 .nav-pills .nav-item .btn:hover,
@@ -283,7 +284,7 @@
 }
 
 .product-item small a:hover {
-    color: var(--primary) !important;
+    color: green;
 }
 
 
@@ -364,7 +365,7 @@
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--light);
+    color: green;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -376,11 +377,11 @@
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: green;
 }
 
 .footer .copyright a:hover {
-    color: var(--primary);
+    color: red;
 }
 /* Container & map */
 .map-responsive { position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; }
@@ -419,24 +420,24 @@
     .dark-mode-nav .navbar-brand h1,
     .dark-mode-nav .nav-link,
     .dark-mode-nav .dropdown-item {
-        color: #ffffff !important;
+        color: #ffffff !importa;
     }
     
     .dark-mode-nav .dropdown-menu {
         background-color: #2d2d2d;
-        border-color: #444;
+        border-color: # Green;
     }
     
     .dark-mode-nav .search-input {
         background-color: #2d2d2d;
         color: #ffffff;
-        border-color: #444;
+        border-color: Green;
     }
     
     .dark-mode-nav .a11y-toolbar button {
         background: #444;
         color: #fff;
-        border-color: #555;
+        border-color: Green;
     }
     
     /* Accessibility Styles */

@@ -1,24 +1,24 @@
 /********** Template CSS **********/
 :root {
     --primary: #3CB815; /* Primary green */
-    --secondary: #F65005;
-    --light: #F7F8FC;
+    --secondary: #FF0000; /* Changed to red */
+    --light: #FFEEEE; /* Changed to light red */
     --dark: #111111;
 }
 
 /* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #444444;
+    color: #3CB815; /* Changed to green */
 }
 
 a {
     text-decoration: none;
-    color: #28a745; /* Changed from blue to green */
+    color: #3CB815; /* Green */
 }
 
 a:hover {
-    color: #218838; /* Darker green */
+    color: #2E8B57; /* Darker green */
 }
 
 /* Spinner */
@@ -49,24 +49,24 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #28a745; /* Green */
-    border-color: #28a745; /* Green */
+    background-color: #3CB815; /* Green */
+    border-color: #3CB815; /* Green */
 }
 
 .btn-primary:hover {
-    background-color: #218838; /* Darker green */
-    border-color: #1e7e34; /* Darker green */
+    background-color: #2E8B57; /* Darker green */
+    border-color: #2E8B57; /* Darker green */
 }
 
 .btn-outline-primary {
-    color: #28a745; /* Green */
-    border-color: #28a745; /* Green */
+    color: #3CB815; /* Green */
+    border-color: #3CB815; /* Green */
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #28a745; /* Green */
-    border-color: #28a745; /* Green */
+    background-color: #3CB815; /* Green */
+    border-color: #3CB815; /* Green */
 }
 
 /* Navbar */
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .section-header::after {
-    background: var(--secondary);
+    background: var(--secondary); /* Red */
 }
 
 /* Product */
@@ -119,24 +119,48 @@ a:hover {
 }
 
 /* Footer */
+.footer {
+    color: #FF0000; /* Red */
+}
+
+.footer .btn.btn-link {
+    color: #FF0000; /* Red */
+}
+
+.footer .btn.btn-link:hover {
+    color: #3CB815; /* Green */
+}
+
+.footer .copyright a {
+    color: #3CB815; /* Green */
+}
+
 .footer .copyright a:hover {
     color: var(--primary);
 }
 
 /* Product Items */
+.product-item {
+    border: 1px solid #3CB815; /* Green border */
+}
+
 .product-item .text-primary {
     color: var(--primary) !important;
 }
 
+.product-item .text-decoration-line-through {
+    color: #FF0000 !important; /* Red */
+}
+
 /* Container & Map */
 .map-wrapper::before {
-    background: linear-gradient(135deg, rgba(255,0,0,0.15), rgba(60,184,21,0.15)); /* Green gradient */
+    background: linear-gradient(135deg, rgba(255,0,0,0.15), rgba(60,184,21,0.15)); /* Red and green gradient */
 }
 
 /* Glow animation */
 @keyframes glow {
     from { text-shadow: 0 0 10px rgba(60,184,21,0.6), 0 0 20px rgba(60,184,21,0.4); } /* Green glow */
-    to { text-shadow: 0 0 10px rgba(255,0,0,0.6), 0 0 20px rgba(255,0,0,0.4); }
+    to { text-shadow: 0 0 10px rgba(255,0,0,0.6), 0 0 20px rgba(255,0,0,0.4); } /* Red glow */
 }
 
 /* Responsive Adjustments */
@@ -154,5 +178,6 @@ a:hover {
 @media (max-width: 767.98px) {
     .product-item {
         margin-bottom: 30px;
+        border: 1px solid #3CB815; /* Green border */
     }
 }

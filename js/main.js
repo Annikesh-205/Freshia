@@ -169,3 +169,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('.search-container');
+    const searchInput = document.querySelector('.search-input');
+    
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get the search query
+        const query = searchInput.value.trim();
+        
+        // Scroll to products section
+        const productsSection = document.getElementById('products-section');
+        if(productsSection) {
+            productsSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Here you would typically filter products based on the search query
+            // For example:
+            if(query) {
+                filterProducts(query);
+            }
+        }
+        
+        return false;
+    });
+    
+    function filterProducts(query) {
+        // Implement your product filtering logic here
+        console.log('Searching for:', query);
+        // This would typically loop through your products and show/hide based on the query
+    }
+});
